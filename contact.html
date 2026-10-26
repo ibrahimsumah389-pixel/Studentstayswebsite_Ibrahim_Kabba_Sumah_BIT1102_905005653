@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact us | StudentStay</title>
+  <meta name="description" content="Contact StudentStay by email, phone or message form.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html" aria-label="StudentStay home">
+        <span class="brand-mark"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M10 21v-6h4v6"/></svg></span>
+        StudentStay
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Open menu">
+      <label for="nav-toggle" class="nav-burger" aria-hidden="true"><span></span><span></span><span></span></label>
+
+      <nav class="site-nav" aria-label="Main">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="accommodation.html">Find Accommodation</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+        <a class="btn btn-primary btn-sm" href="list-property.html">List Property</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="page-mist">
+    <section class="page-hero">
+      <div class="wrap">
+        <h1>Contact us</h1>
+        <p>We&rsquo;d love to hear from you. Get in touch with us for any questions or support.</p>
+      </div>
+    </section>
+
+    <div class="wrap page-body contact-grid">
+      <section class="card panel" aria-labelledby="details-title">
+        <h2 id="details-title" class="label-title">Contact details</h2>
+        <ul class="contact-list">
+          <li><span class="service-icon"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span><div><span class="label">Email</span><a href="mailto:immisumah01@gmail.com">immisumah01@gmail.com</a></div></li>
+          <li><span class="service-icon"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span><div><span class="label">Phone</span><a href="tel:+23233982076">+232 33 982076</a></div></li>
+          <li><span class="service-icon"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span><div><span class="label">Location</span><span class="value">Freetown, Sierra Leone</span></div></li>
+        </ul>
+        <div class="hours">
+          <h3>Office hours</h3>
+          <dl class="hours-list">
+            <dt>Mon &ndash; Fri</dt><dd>8:30 am &ndash; 5:00 pm</dd>
+            <dt>Saturday</dt><dd>9:00 am &ndash; 1:00 pm</dd>
+            <dt>Sunday</dt><dd>Closed</dd>
+          </dl>
+        </div>
+      </section>
+
+      <form class="card panel" action="verify.html" method="get" aria-labelledby="form-title">
+        <h2 id="form-title" class="label-title">Contact form</h2>
+        <div class="form-stack">
+          <div class="field">
+            <label for="name">Name</label>
+            <input class="input" id="name" name="name" type="text" autocomplete="name" placeholder="Enter your name" required>
+            <span class="error-msg">Enter your name.</span>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input class="input" id="email" name="email" type="email" autocomplete="email" placeholder="Enter your email" required>
+            <span class="error-msg">Enter a valid email address, like name@example.com.</span>
+          </div>
+          <div class="field">
+            <label for="phone">Phone number</label>
+            <input class="input" id="phone" name="phone" type="tel" autocomplete="tel" placeholder="e.g. 033 982076" pattern="[0-9+ ]{8,15}" required>
+            <span class="field-hint">We&rsquo;ll text a 6-digit code to this number to confirm it&rsquo;s you.</span>
+            <span class="error-msg">Enter a phone number using digits only, like 033 982076.</span>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea class="textarea" id="message" name="message" placeholder="Type your message here..." minlength="10" required></textarea>
+            <span class="error-msg">Write a message of at least 10 characters.</span>
+          </div>
+          <button class="btn btn-accent btn-block btn-tall" type="submit"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 3 10 14"/><path d="M21 3 14 21l-4-7-7-4z"/></svg>Send Message</button>
+          <p class="form-note centered">Step 1 of 2: next you&rsquo;ll confirm your phone with a code.</p>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div>
+        <p class="footer-brand">StudentStay</p>
+        <p>Student accommodation in Freetown, Sierra Leone</p>
+      </div>
+      <nav aria-label="Footer">
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="privacy.html">Privacy &amp; terms</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="wrap">
+      <p class="copyright">&copy; 2026 StudentStay. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

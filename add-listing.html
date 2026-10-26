@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Add your listing | StudentStay</title>
+  <meta name="description" content="Add your property details and photos.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html" aria-label="StudentStay home">
+        <span class="brand-mark"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M10 21v-6h4v6"/></svg></span>
+        StudentStay
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Open menu">
+      <label for="nav-toggle" class="nav-burger" aria-hidden="true"><span></span><span></span><span></span></label>
+
+      <nav class="site-nav" aria-label="Main">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="accommodation.html">Find Accommodation</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a class="btn btn-accent btn-sm" href="list-property.html" aria-current="page">List Property</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="page-mist">
+    <section class="page-hero">
+      <div class="wrap">
+        <h1>Add your listing</h1>
+        <p>Step 2 of 3: tell students about your room. Our team checks every listing before it goes live.</p>
+      </div>
+    </section>
+
+    <div class="wrap page-body narrow-wide">
+      <form class="card panel" action="thank-you-listing.html" method="get">
+        <div class="form-grid">
+          <div class="field full">
+            <label for="p-title">Listing title</label>
+            <input class="input" id="p-title" name="title" placeholder="For example: Single room near Fourah Bay College" required>
+            <span class="error-msg">Give your listing a title.</span>
+          </div>
+          <div class="field">
+            <label for="p-area">Location</label>
+            <select class="select" id="p-area" name="location" required><option value="">Choose an area</option><option>Mount Aureol</option><option>Kingtom</option><option>Wilberforce</option><option>Fourah Bay Road</option><option>Hill Station</option><option>Lumley</option></select>
+            <span class="error-msg">Choose the area.</span>
+          </div>
+          <div class="field">
+            <label for="p-type">Room type</label>
+            <select class="select" id="p-type" name="room" required><option value="">Choose a room type</option><option>Single room</option><option>Shared room</option><option>Self-contained</option><option>Apartment</option></select>
+            <span class="error-msg">Choose the room type.</span>
+          </div>
+          <div class="field">
+            <label for="p-price">Monthly rent (SLE)</label>
+            <input class="input" id="p-price" name="price" type="number" min="100" step="50" required>
+            <span class="error-msg">Enter the monthly rent.</span>
+          </div>
+          <div class="field">
+            <label for="p-date">Available from</label>
+            <input class="input" id="p-date" name="available" type="date" required>
+            <span class="error-msg">Choose a date.</span>
+          </div>
+          <fieldset class="chip-group full">
+            <legend>Facilities</legend>
+                <label class="chip"><input type="checkbox" name="facility" value="Wi-Fi"><span><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 8.8a15 15 0 0 1 20 0"/><path d="M5.5 12.4a10 10 0 0 1 13 0"/><path d="M9 16a5 5 0 0 1 6 0"/><circle cx="12" cy="19.5" r="1"/></svg>Wi-Fi</span></label>
+                <label class="chip"><input type="checkbox" name="facility" value="Water"><span><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/></svg>Water</span></label>
+                <label class="chip"><input type="checkbox" name="facility" value="Electricity"><span><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg>Electricity</span></label>
+                <label class="chip"><input type="checkbox" name="facility" value="Security"><span><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v6c0 4.5 3.4 8.3 8 9 4.6-.7 8-4.5 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg>Security</span></label>
+                <label class="chip"><input type="checkbox" name="facility" value="Parking"><span><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="3"/><path d="M10 17V7h3a3 3 0 0 1 0 6h-3"/></svg>Parking</span></label>
+          </fieldset>
+          <div class="field full">
+            <label for="p-desc">Description</label>
+            <textarea class="textarea" id="p-desc" name="description" minlength="40" placeholder="Describe the room, the house and what is nearby" required></textarea>
+            <span class="error-msg">Write at least 40 characters.</span>
+          </div>
+          <div class="field full">
+            <label for="p-photos">Photos <span class="optional">(up to 8)</span></label>
+            <input class="input" id="p-photos" name="photos" type="file" accept="image/*" multiple>
+          </div>
+          <label class="check-row full"><input type="checkbox" name="terms" required>I confirm these details are accurate and agree to the <a href="privacy.html">Privacy &amp; terms</a>.</label>
+          <div class="full"><button class="btn btn-accent btn-block btn-tall" type="submit">Submit listing for review</button></div>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div>
+        <p class="footer-brand">StudentStay</p>
+        <p>Student accommodation in Freetown, Sierra Leone</p>
+      </div>
+      <nav aria-label="Footer">
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="privacy.html">Privacy &amp; terms</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="wrap">
+      <p class="copyright">&copy; 2026 StudentStay. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

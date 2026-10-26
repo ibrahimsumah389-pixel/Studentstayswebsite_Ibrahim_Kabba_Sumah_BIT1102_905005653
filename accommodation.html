@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Find accommodation | StudentStay</title>
+  <meta name="description" content="Search student rooms and apartments in Freetown by location, price, room type and facilities.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html" aria-label="StudentStay home">
+        <span class="brand-mark"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M10 21v-6h4v6"/></svg></span>
+        StudentStay
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Open menu">
+      <label for="nav-toggle" class="nav-burger" aria-hidden="true"><span></span><span></span><span></span></label>
+
+      <nav class="site-nav" aria-label="Main">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="accommodation.html" aria-current="page">Find Accommodation</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a class="btn btn-primary btn-sm" href="list-property.html">List Property</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="page-mist">
+    <section class="page-hero">
+      <div class="wrap">
+        <h1>Find your accommodation</h1>
+        <p>Filter by location, price, room type and facilities.</p>
+      </div>
+    </section>
+
+    <div class="wrap page-body">
+      <form class="card filter-card" action="accommodation.html" method="get" aria-label="Filter accommodation">
+        <div class="filter-fields">
+          <div class="field">
+            <label for="f-location">Location</label>
+            <select class="select" id="f-location" name="location"><option value="">Any location</option><option>Mount Aureol</option><option>Kingtom</option><option>Wilberforce</option><option>Fourah Bay Road</option><option>Hill Station</option><option>Lumley</option></select>
+          </div>
+          <div class="field">
+            <span class="field-label">Price range (SLE / month)</span>
+            <div class="price-pair">
+              <input class="input" type="number" name="min" min="0" step="100" placeholder="Min price" aria-label="Minimum price">
+              <input class="input" type="number" name="max" min="0" step="100" placeholder="Max price" aria-label="Maximum price">
+            </div>
+          </div>
+          <div class="field">
+            <label for="f-room">Room type</label>
+            <select class="select" id="f-room" name="room"><option value="">Any room type</option><option>Single room</option><option>Shared room</option><option>Self-contained</option><option>Apartment</option></select>
+          </div>
+        </div>
+        <div class="filter-foot">
+          <fieldset class="chip-group">
+            <legend>Facilities</legend>
+            <label class="chip"><input type="checkbox" name="facility" value="Wi-Fi"><span><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 8.8a15 15 0 0 1 20 0"/><path d="M5.5 12.4a10 10 0 0 1 13 0"/><path d="M9 16a5 5 0 0 1 6 0"/><circle cx="12" cy="19.5" r="1"/></svg>Wi-Fi</span></label>
+            <label class="chip"><input type="checkbox" name="facility" value="Water"><span><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/></svg>Water</span></label>
+            <label class="chip"><input type="checkbox" name="facility" value="Electricity"><span><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg>Electricity</span></label>
+            <label class="chip"><input type="checkbox" name="facility" value="Security"><span><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v6c0 4.5 3.4 8.3 8 9 4.6-.7 8-4.5 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg>Security</span></label>
+            <label class="chip"><input type="checkbox" name="facility" value="Parking"><span><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="3"/><path d="M10 17V7h3a3 3 0 0 1 0 6h-3"/></svg>Parking</span></label>
+          </fieldset>
+          <div class="filter-buttons">
+            <button class="btn btn-accent" type="submit"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>Search</button>
+            <button class="btn btn-outline-accent" type="reset">Clear</button>
+          </div>
+        </div>
+      </form>
+
+      <div class="results-bar">
+        <p class="results-count">5 places found</p>
+        <div class="results-tools">
+          <label class="sort" for="sort">Sort by
+            <select class="select" id="sort" name="sort">
+              <option>Recommended</option>
+              <option>Price: low to high</option>
+              <option>Price: high to low</option>
+            </select>
+          </label>
+          <a class="btn btn-outline-accent" href="compare.html">Compare saved</a>
+        </div>
+      </div>
+
+      <ol class="results" aria-label="Search results">
+        <li class="result">
+          <div class="photo"><img src="images/listing-1.jpg" alt="Single room with patterned bedding, a fan and two windows" width="500" height="375" loading="lazy"></div>
+          <div class="result-body">
+            <h3>Student Residence</h3>
+            <div class="result-facts">
+              <span class="meta"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Mount Aureol</span>
+              <span class="meta"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 18V7"/><path d="M3 14h18v4"/><path d="M21 14v-3a3 3 0 0 0-3-3h-7v6"/><circle cx="7" cy="11" r="1.5"/></svg>Single room</span>
+              <span class="meta"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>8 min walk to Fourah Bay College</span>
+            </div>
+            <ul class="facility-list" aria-label="Facilities"><li>Wi-Fi</li><li>Water</li><li>Security</li></ul>
+          </div>
+          <div class="result-actions">
+            <p class="price">SLE 1,500 <small>/ month</small></p>
+            <a class="btn btn-primary btn-sm" href="listing.html">View details</a>
+            <label class="save"><input type="checkbox" name="saved" value="1"><span><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg><span class="visually-hidden">Student Residence</span></span></label>
+          </div>
+        </li>
+        <li class="result">
+          <div class="photo"><img src="images/listing-2.jpg" alt="Self-contained room with a double bed and a sofa" width="500" height="375" loading="lazy"></div>
+          <div class="result-body">
+            <h3>Student Apartment</h3>
+            <div class="result-facts">
+              <span class="meta"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Kingtom</span>
+              <span class="meta"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 18V7"/><path d="M3 14h18v4"/><path d="M21 14v-3a3 3 0 0 0-3-3h-7v6"/><circle cx="7" cy="11" r="1.5"/></svg>Self-contained</span>
+              <span class="meta"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>On the main bus route</span>
+            </div>
+            <ul class="facility-list" aria-label="Facilities"><li>Wi-Fi</li><li>Water</li><li>Electricity</li><li>Parking</li></ul>
+          </div>
+          <div class="result-actions">
+            <p class="price">SLE 2,500 <small>/ month</small></p>
+            <a class="btn btn-primary btn-sm" href="listing.html">View details</a>
+            <label class="save"><input type="checkbox" name="saved" value="2"><span><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg><span class="visually-hidden">Student Apartment</span></span></label>
+          </div>
+        </li>
+        <li class="result">
+          <div class="photo"><img src="images/listing-3.jpg" alt="Bedroom with a four-poster bed and doors to a balcony" width="500" height="375" loading="lazy"></div>
+          <div class="result-body">
+            <h3>Modern Apartment</h3>
+            <div class="result-facts">
+              <span class="meta"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Wilberforce</span>
+              <span class="meta"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 18V7"/><path d="M3 14h18v4"/><path d="M21 14v-3a3 3 0 0 0-3-3h-7v6"/><circle cx="7" cy="11" r="1.5"/></svg>Apartment</span>
+              <span class="meta"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Newly furnished, 1 bedroom</span>
+            </div>
+            <ul class="facility-list" aria-label="Facilities"><li>Wi-Fi</li><li>Water</li><li>Electricity</li><li>Parking</li></ul>
+          </div>
+          <div class="result-actions">
+            <p class="price">SLE 2,800 <small>/ month</small></p>
+            <a class="btn btn-primary btn-sm" href="listing.html">View details</a>
+            <label class="save"><input type="checkbox" name="saved" value="3"><span><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg><span class="visually-hidden">Modern Apartment</span></span></label>
+          </div>
+        </li>
+        <li class="result">
+          <div class="photo"><img src="images/listing-4.jpg" alt="Shared room with two beds and a bedside table" width="500" height="375" loading="lazy"></div>
+          <div class="result-body">
+            <h3>Shared Room</h3>
+            <div class="result-facts">
+              <span class="meta"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Fourah Bay Road</span>
+              <span class="meta"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 18V7"/><path d="M3 14h18v4"/><path d="M21 14v-3a3 3 0 0 0-3-3h-7v6"/><circle cx="7" cy="11" r="1.5"/></svg>Shared room</span>
+              <span class="meta"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Shared between 2 students</span>
+            </div>
+            <ul class="facility-list" aria-label="Facilities"><li>Water</li><li>Electricity</li><li>Security</li></ul>
+          </div>
+          <div class="result-actions">
+            <p class="price">SLE 1,000 <small>/ month</small></p>
+            <a class="btn btn-primary btn-sm" href="listing.html">View details</a>
+            <label class="save"><input type="checkbox" name="saved" value="4"><span><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg><span class="visually-hidden">Shared Room</span></span></label>
+          </div>
+        </li>
+        <li class="result">
+          <div class="photo"><img src="images/listing-5.jpg" alt="Bright room with a balcony looking out over the hills of Freetown" width="500" height="375" loading="lazy"></div>
+          <div class="result-body">
+            <h3>Hillside Single Room</h3>
+            <div class="result-facts">
+              <span class="meta"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Hill Station</span>
+              <span class="meta"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 18V7"/><path d="M3 14h18v4"/><path d="M21 14v-3a3 3 0 0 0-3-3h-7v6"/><circle cx="7" cy="11" r="1.5"/></svg>Single room</span>
+              <span class="meta"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Quiet area with city views</span>
+            </div>
+            <ul class="facility-list" aria-label="Facilities"><li>Wi-Fi</li><li>Water</li><li>Electricity</li><li>Security</li></ul>
+          </div>
+          <div class="result-actions">
+            <p class="price">SLE 1,800 <small>/ month</small></p>
+            <a class="btn btn-primary btn-sm" href="listing.html">View details</a>
+            <label class="save"><input type="checkbox" name="saved" value="5"><span><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg><span class="visually-hidden">Hillside Single Room</span></span></label>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div>
+        <p class="footer-brand">StudentStay</p>
+        <p>Student accommodation in Freetown, Sierra Leone</p>
+      </div>
+      <nav aria-label="Footer">
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="privacy.html">Privacy &amp; terms</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="wrap">
+      <p class="copyright">&copy; 2026 StudentStay. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

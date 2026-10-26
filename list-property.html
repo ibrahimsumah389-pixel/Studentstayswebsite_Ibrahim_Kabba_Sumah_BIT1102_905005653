@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>List your property | StudentStay</title>
+  <meta name="description" content="Advertise rooms and apartments to students in Freetown with StudentStay.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html" aria-label="StudentStay home">
+        <span class="brand-mark"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M10 21v-6h4v6"/></svg></span>
+        StudentStay
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Open menu">
+      <label for="nav-toggle" class="nav-burger" aria-hidden="true"><span></span><span></span><span></span></label>
+
+      <nav class="site-nav" aria-label="Main">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="accommodation.html">Find Accommodation</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a class="btn btn-accent btn-sm" href="list-property.html" aria-current="page">List Property</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="page-mist">
+    <section class="page-hero">
+      <div class="wrap">
+        <h1>List your property</h1>
+        <p>Reach students looking for rooms in Freetown. Listing is free during our launch period.</p>
+      </div>
+    </section>
+
+    <div class="wrap page-body">
+      <ol class="process">
+        <li class="card"><span class="process-num">1</span>Register or log in</li>
+        <li class="card"><span class="process-num">2</span>Add your listing</li>
+        <li class="card"><span class="process-num">3</span>Manage enquiries</li>
+      </ol>
+
+      <div class="owner-grid">
+        <div>
+          <h2>Why list with StudentStay?</h2>
+          <p class="lead">Students can see your price, photos and facilities before they call, so the enquiries you get are from people who are already interested.</p>
+          <div class="photo owner-photo"><img src="images/kingtom.jpg" alt="Kingtom Studios student residence with its sign and gated entrance" width="569" height="376" loading="lazy"></div>
+        </div>
+
+        <div class="card tabs">
+          <input type="radio" name="account-tab" id="tab-register" class="tab-input" checked>
+          <input type="radio" name="account-tab" id="tab-login" class="tab-input">
+          <div class="tab-labels" role="presentation">
+            <label for="tab-register">Register</label>
+            <label for="tab-login">Log in</label>
+          </div>
+
+          <form class="tab-panel panel-register" action="add-listing.html" method="get" aria-label="Register">
+            <div class="form-stack">
+              <div class="field">
+                <label for="r-name">Full name</label>
+                <input class="input" id="r-name" name="name" autocomplete="name" required>
+                <span class="error-msg">Enter your full name.</span>
+              </div>
+              <div class="field">
+                <label for="r-email">Email</label>
+                <input class="input" id="r-email" name="email" type="email" autocomplete="email" required>
+                <span class="error-msg">Enter a valid email address.</span>
+              </div>
+              <div class="field">
+                <label for="r-phone">Phone</label>
+                <input class="input" id="r-phone" name="phone" type="tel" autocomplete="tel" placeholder="+232 ..." required>
+                <span class="error-msg">Enter a phone number students can call.</span>
+              </div>
+              <div class="field">
+                <label for="r-pass">Password</label>
+                <input class="input" id="r-pass" name="password" type="password" autocomplete="new-password" minlength="8" required>
+                <span class="error-msg">Use at least 8 characters.</span>
+              </div>
+              <button class="btn btn-accent btn-block btn-tall" type="submit">Create account</button>
+            </div>
+          </form>
+
+          <form class="tab-panel panel-login" action="add-listing.html" method="get" aria-label="Log in">
+            <div class="form-stack">
+              <div class="field">
+                <label for="l-email">Email</label>
+                <input class="input" id="l-email" name="email" type="email" autocomplete="email" required>
+                <span class="error-msg">Enter the email you registered with.</span>
+              </div>
+              <div class="field">
+                <label for="l-pass">Password</label>
+                <input class="input" id="l-pass" name="password" type="password" autocomplete="current-password" required>
+                <span class="error-msg">Enter your password.</span>
+              </div>
+              <button class="btn btn-accent btn-block btn-tall" type="submit">Log in</button>
+              <p class="form-note centered">Forgot your password? <a href="contact.html">Contact us</a>.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div>
+        <p class="footer-brand">StudentStay</p>
+        <p>Student accommodation in Freetown, Sierra Leone</p>
+      </div>
+      <nav aria-label="Footer">
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="privacy.html">Privacy &amp; terms</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="wrap">
+      <p class="copyright">&copy; 2026 StudentStay. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
